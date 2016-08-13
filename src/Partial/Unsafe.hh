@@ -24,7 +24,7 @@ namespace Partial_Unsafe {
   // foreign import unsafePartial :: forall a. (Partial => a) -> a
   //
   inline auto unsafePartial(const any& f) -> any {
-    return f();
+    return f(undefined);
   }
 }
 
