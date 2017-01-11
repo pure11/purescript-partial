@@ -23,7 +23,7 @@ namespace Partial {
 
   // foreign import crashWith :: forall a. Partial => String -> a
   //
-  inline auto crashWith(const any&, const any& msg) -> any {
+  inline auto crashWith(const any&, const string& msg) -> any {
     throw runtime_error(msg);
   }
 
